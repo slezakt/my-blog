@@ -18,7 +18,7 @@ export default {
   async asyncData({ $content, error }) {
       let posts;
       try {
-        posts = await $$content('blog').fetch();
+        posts = await $content('blog').fetch();
       } catch (e) {
         error({ message: "Stránka neexistuje" });
       }

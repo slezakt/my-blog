@@ -1,5 +1,13 @@
 <template>
   <div>
+    <ul>
+      <li>
+        <NuxtLink to="/">Domů</NuxtLink>
+      </li>
+      <li>
+        <NuxtLink to="/omne">O mně</NuxtLink>
+      </li>
+    </ul>
     <Nuxt />
   </div>
 </template>

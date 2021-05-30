@@ -26,8 +26,8 @@ collections:
   - label: "Pages"
     name: "pages"
     files:
-      - label: "O mě"
-        name: "ome"
+      - label: "O mně"
+        name: "omne"
         file: "content/about.md"
         fields:
           - { label: "Title", name: "title", widget: "string", required: true }
