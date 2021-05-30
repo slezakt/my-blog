@@ -4,12 +4,27 @@
       <h1 class="title">
         Tomův webdev blog
       </h1>
+      <ul>
+        <li v-for="post of posts" :key="post.slug">
+          <NuxtLink :to="post.slug">{{ post.title }}</NuxtLink>
+        </li>
+      </ul>
     </div>
   </div>
 </template>
 
 <script>
-export default {}
+export default {
+  async asyncData({ $content, error }) {
+      let posts;
+      try {
+        posts = await $$content('blog').fetch();
+      } catch (e) {
+        error({ message: "Stránka neexistuje" });
+      }
+      return { posts }
+  }
+}
 </script>
 
 <style>
