@@ -1,15 +1,12 @@
 ---
 title: O mně
 description: stránka o mně
+thubnail:
 ---
 
 ## Text o mně.
 
-<<<<<<< HEAD
-Podnadpis
-=======
 ### Podnadpis
->>>>>>> 8426e42bc7ef542e4bc59d4a671b95f022899ed4
 
 ![tom](/img/tom.jpg)
 

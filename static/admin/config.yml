@@ -18,6 +18,7 @@ collections:
     #   preview: true
     fields:
       - { label: "Title", name: "title", widget: "string", required: true }
+      - { label: "Featured Image", name: "thumbnail", widget: "image" }
       - {
           label: "Description",
           name: "description",

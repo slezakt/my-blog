@@ -13,6 +13,7 @@
           <NuxtLink :to="`blog/${post.slug}`" class="flex flex-col bg-white p-6 rounded-lg shadow-md">
             <h3>{{ post.title }}</h3>
             <p>{{ post.description }}</p>
+            <img :src="post.thumbnail" alt="">
           </NuxtLink>
         </li>
       </ul>
