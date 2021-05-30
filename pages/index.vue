@@ -1,12 +1,19 @@
 <template>
-  <div class="container">
-    <div>
-      <h1 class="title">
-        Tomův webdev blog
-      </h1>
-      <ul>
-        <li v-for="post of posts" :key="post.slug">
-          <NuxtLink :to="post.slug">{{ post.title }}</NuxtLink>
+  <div class="">
+    <div class="w-full bg-gradient-to-br from-purple-500 to-indigo-500 p-8 text-white">
+      <div class="container mx-auto">
+        <h1 class="text-4xl">
+          Tomův webdev blog
+        </h1>
+      </div>
+    </div>
+    <div class="container mx-auto">
+      <ul class="flex justify-between">
+        <li v-for="post of posts" :key="post.slug" class="w-1/2 m-2">
+          <NuxtLink :to="`blog/${post.slug}`" class="flex flex-col bg-white p-6 rounded-lg shadow-md">
+            <h3>{{ post.title }}</h3>
+            <p>{{ post.description }}</p>
+          </NuxtLink>
         </li>
       </ul>
     </div>
@@ -28,47 +35,4 @@ export default {
 </script>
 
 <style>
-/* Sample `apply` at-rules with Tailwind CSS
-.container {
-@apply min-h-screen flex justify-center items-center text-center mx-auto;
-}
-*/
-.container {
-  margin: 0 auto;
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
-
-.title {
-  font-family:
-    'Quicksand',
-    'Source Sans Pro',
-    -apple-system,
-    BlinkMacSystemFont,
-    'Segoe UI',
-    Roboto,
-    'Helvetica Neue',
-    Arial,
-    sans-serif;
-  display: block;
-  font-weight: 300;
-  font-size: 100px;
-  color: #35495e;
-  letter-spacing: 1px;
-}
-
-.subtitle {
-  font-weight: 300;
-  font-size: 42px;
-  color: #526488;
-  word-spacing: 5px;
-  padding-bottom: 15px;
-}
-
-.links {
-  padding-top: 15px;
-}
 </style>
