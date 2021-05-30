@@ -11,9 +11,10 @@
       <ul class="flex justify-between">
         <li v-for="post of posts" :key="post.slug" class="w-1/2 m-2">
           <NuxtLink :to="`blog/${post.slug}`" class="flex flex-col bg-white p-6 rounded-lg shadow-md">
+            <p>{{ post.date }}</p>
             <h3>{{ post.title }}</h3>
             <p>{{ post.description }}</p>
-            <img :src="post.thumbnail" alt="">
+            <img :src="post.thumbnail" alt="" />
           </NuxtLink>
         </li>
       </ul>
