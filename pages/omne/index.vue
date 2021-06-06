@@ -1,7 +1,7 @@
 <template>
 	<div>
 		<pre>
-			{{about.galleryImages}}
+			{{about}}
 		</pre>
 		<ul>
 			<li v-for="gallery in about.galleryImages" :key="gallery"><img :src="gallery" alt=""></li>
