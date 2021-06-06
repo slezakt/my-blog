@@ -45,3 +45,10 @@ collections:
               widget: "markdown",
               required: false,
             }
+  - name: "gallery"
+    label: "Galerie"
+    widget: "image"
+    default: "/uploads/chocolate-dogecoin.jpg"
+    media_library:
+      config:
+        multiple: true
