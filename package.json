@@ -11,6 +11,7 @@
   "dependencies": {
     "@nuxt/content": "^1.14.0",
     "core-js": "^3.9.1",
+    "embla-carousel": "^4.5.3",
     "netlify-cms-app": "^2.15.13",
     "nuxt": "^2.15.3"
   },
