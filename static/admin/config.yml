@@ -49,8 +49,14 @@ collections:
         name: "galerie"
         file: "gallery/.md"
         fields:
-          media_library:
-            config:
-              multiple: true
           - { label: "Title", name: "title", widget: "string", required: true }
           - { label: "Featured Image", name: "thumbnail", widget: "image" }
+         - label: Gallery
+            name: covers
+            widget: image
+            media_library:
+              config:
+                multiple: true
+                multipleMax: 4
+                imagesOnly: true
+                imageShrink: 1200x1200
