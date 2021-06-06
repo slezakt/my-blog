@@ -18,8 +18,30 @@
           </NuxtLink>
         </li>
       </ul>
-      <button @click="toggleModal = !toggleModal">Open Modal</button>
-      {{toggleModal}}
+      <button
+        type="button"
+        class="btn"
+        @click="showModal"
+      >
+        Open Modal!
+      </button>
+
+      <Modal
+        v-show="isModalVisible"
+        @close="closeModal"
+      >
+        <template v-slot:header>
+          This is a new modal header.
+        </template>
+
+        <template v-slot:body>
+          This is a new modal body.
+        </template>
+
+        <template v-slot:footer>
+          This is a new modal footer.
+        </template>
+      </Modal>
     </div>
   </div>
 </template>
@@ -35,6 +57,19 @@ export default {
     }
     return { posts }
   },
+  data() {
+      return {
+        isModalVisible: false,
+      };
+    },
+    methods: {
+      showModal() {
+        this.isModalVisible = true;
+      },
+      closeModal() {
+        this.isModalVisible = false;
+      }
+    }
 }
 </script>
 
