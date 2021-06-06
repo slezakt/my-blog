@@ -1,5 +1,11 @@
 <template>
 	<div>
+		<pre>
+			{{about.galleryImages}}
+		</pre>
+		<ul>
+			<li v-for="gallery in about.galleryImages" :key="gallery"><img :src="gallery" alt=""></li>
+		</ul>
 		<nuxt-content :document="about" />
 		<button
         type="button"
@@ -32,6 +38,7 @@ export default {
 		let about;
 		try {
 			about = await $content("about").fetch();
+			console.log(about);
 		} catch (e) {
 			error({ message: "Stránka neexistuje" });
 		}
