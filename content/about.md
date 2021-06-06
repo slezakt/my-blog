@@ -1,9 +1,8 @@
 ---
 title: O mně
 description: stránka o mně
-thubnail:
+thubnail: null
 ---
-
 ## Text o mně.
 
 ### Podnadpis
@@ -17,5 +16,3 @@ Jelly beans biscuit lemon drops biscuit muffin \*sweet icing carrot ca
 Cupcake sugar plum donut gingerbread marzipan. Bonbon chocolate bar cake ice cream jelly. Pie cake gummi bears sesame snaps soufflé pie pudding donut biscuit. Gummi bears biscuit candy toffee bonbon brownie cupcake cookie cake. Topping lemon drops apple pie carrot cake lemon drops. Chocolate cake pudding cake jelly caramels liquorice icing. Pastry chocolate cake cake bear claw tootsie roll. Gingerbread liquorice caramels jelly cotton candy wafer lemon drops. Sweet roll topping candy dessert wafer muffin. Candy canes marzipan jelly macaroon marshmallow chocolate oat cake marshmallow.
 
 Halvah carrot cake chupa chups tootsie roll carrot cake cookie. Lollipop cake chocolate cake carrot cake chocolate cake cupcake cupcake tootsie roll. Cake danish cotton candy soufflé cotton candy. Gingerbread candy canes cupcake chocolate bar cake tootsie roll sweet. Sesame snaps bonbon cookie bear claw danish pudding tootsie roll. Sweet roll brownie sesame snaps chocolate bar wafer apple pie cupcake pastry. Powder chocolate bar dessert caramels marshmallow.
-
-Halvah gummi bears cake caramels. Pie liquorice bonbon lemon drops. Gummi bears powder caramels chocolate cake chocolate cake danish. Lemon drops gummies chocolate bar candy. Chocolate cake macaroon powder tootsie roll tootsie roll. Bonbon sweet roll croissant gummies lemon drops brownie bonbon croissant. Toffee topping halvah. Candy soufflé wafer lemon drops. Soufflé gummi bears chocolate sesame snaps jelly beans pastry.
