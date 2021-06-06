@@ -2,6 +2,9 @@
 title: O mně
 description: stránka o mně
 thubnail: null
+galleryImages:
+  - /img/pexels-photo-251225.jpeg
+  - /img/tom.jpg
 ---
 ## Text o mně.
 
