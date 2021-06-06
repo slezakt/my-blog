@@ -14,9 +14,6 @@ collections:
     format: "frontmatter"
     slug: "{{slug}}"
     widget: image
-    date: {{year}}-{{month}}-{{day}}
-    # editor:
-    #   preview: true
     fields:
       - { label: "Title", name: "title", widget: "string", required: true }
       - { label: "Featured Image", name: "thumbnail", widget: "image" }
@@ -27,8 +24,8 @@ collections:
           required: false,
         }
       - { label: "Body", name: "body", widget: "markdown", required: false }
-  - label: "Pages"
-    name: "pages"
+  - name: "pages"
+    label: "Pages"
     files:
       - label: "O mně"
         name: "omne"
