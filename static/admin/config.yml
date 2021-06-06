@@ -1,5 +1,6 @@
 backend:
   name: git-gateway
+  repo: slezakt/my-blog
   branch: main # Branch to update (optional; defaults to master)
   local_backend: true
 
