@@ -18,6 +18,8 @@
           </NuxtLink>
         </li>
       </ul>
+      <button @click="toggleModal = !toggleModal">Open Modal</button>
+      {{toggleModal}}
     </div>
   </div>
 </template>
@@ -25,14 +27,14 @@
 <script>
 export default {
   async asyncData({ $content, error }) {
-      let posts;
-      try {
-        posts = await $content('blog').fetch();
-      } catch (e) {
-        error({ message: "Stránka neexistuje" });
-      }
-      return { posts }
-  }
+    let posts;
+    try {
+      posts = await $content('blog').fetch();
+    } catch (e) {
+      error({ message: "Stránka neexistuje" });
+    }
+    return { posts }
+  },
 }
 </script>
 

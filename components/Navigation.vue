@@ -7,21 +7,18 @@
         </div>
         <ul class="flex">
             <li class="ml-2">
-                <NuxtLink to="/">Domů</NuxtLink>
+                <NuxtLink to="/" :class="{'text-purple-500':$route.path=='/'}">Domů</NuxtLink>
             </li>
             <li class="ml-2">
-                <NuxtLink to="/omne">O mně</NuxtLink>
+                <NuxtLink to="/omne" :class="{'text-purple-500':$route.path=='/omne'}">O mně</NuxtLink>
             </li>
         </ul>
     </nav>
 </template>
 <script>
 export default {
-    
+
 }
 </script>
 <style>
-    .nuxt-link-exact-active {
-        @apply text-purple-500;
-    }
 </style>
