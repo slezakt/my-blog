@@ -45,10 +45,9 @@ collections:
               widget: "markdown",
               required: false,
             }
-  - name: "gallery"
-    label: "Galerie"
-    widget: "image"
-    default: "/uploads/chocolate-dogecoin.jpg"
-    media_library:
-      config:
-        multiple: true
+      - label: "Galerie"
+          name: "galerie"
+          file: "gallery/.md"
+          fields:
+            - { label: "Title", name: "title", widget: "string", required: true }
+            - { label: "Featured Image", name: "thumbnail", widget: "image" }
