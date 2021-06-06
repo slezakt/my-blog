@@ -46,8 +46,11 @@ collections:
               required: false,
             }
       - label: "Galerie"
-          name: "galerie"
-          file: "gallery/.md"
-          fields:
-            - { label: "Title", name: "title", widget: "string", required: true }
-            - { label: "Featured Image", name: "thumbnail", widget: "image" }
+        name: "galerie"
+        file: "gallery/.md"
+        media_library:
+          config:
+            multiple: true
+        fields:
+          - { label: "Title", name: "title", widget: "string", required: true }
+          - { label: "Featured Image", name: "thumbnail", widget: "image" }
