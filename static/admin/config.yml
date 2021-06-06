@@ -48,8 +48,6 @@ collections:
           - label: "Gallery"
             name: "galleryImages"
             widget: "list"
-            summary: "{{fields.image}}"
             fields:
-              { label: "Title", name: "title", widget: "string", required: true }
-              { label: "Featured Image", name: "thumbnail", widget: "image" }
-              { label: Image, name: image, widget: image }
+              - { label: "Source", name: "src", widget: "string" }
+              - { label: "Alt Text", name: "alt", widget: "string" }
