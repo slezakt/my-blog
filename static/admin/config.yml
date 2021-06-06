@@ -49,5 +49,11 @@ collections:
             name: "galleryImages"
             widget: "list"
             fields:
-              - { label: "Source", name: "src", widget: "string" }
-              - { label: "Alt Text", name: "alt", widget: "string" }
+              - {
+                  label: "Title",
+                  name: "title",
+                  widget: "string",
+                  required: true,
+                }
+              - { label: "Featured Image", name: "thumbnail", widget: "image" }
+              - { label: Image, name: image, widget: image }
